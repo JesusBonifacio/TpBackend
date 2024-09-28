@@ -24,6 +24,8 @@ public class AuthorityServiceImpl implements AuthorityService {
 
     }
 
+
+
     @Override
     public Authority findById(Long id) {
         Authority authorityFound = authorityRepository.findById(id).orElse(null);
