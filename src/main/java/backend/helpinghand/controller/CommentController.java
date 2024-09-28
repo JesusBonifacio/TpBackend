@@ -33,6 +33,4 @@ public class CommentController {
     public ResponseEntity<List<Comment>> listCommentsByProfileName(@PathVariable ("name") String name){
         return new ResponseEntity<>(commentService.listCommentsByProfileName(name),HttpStatus.OK);
     }
-
-
 }

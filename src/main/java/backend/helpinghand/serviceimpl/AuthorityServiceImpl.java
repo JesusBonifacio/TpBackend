@@ -11,18 +11,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class AuthorityServiceImpl implements AuthorityService {
 
-    @Autowired
-    AuthorityRepository authorityRepository;
 
-    @Override
-    public Authority findByName(String name) {
-        Authority authorityFound = authorityRepository.findByName(name);
-        if (authorityFound==null){
-            throw new ResourceNotFoundException("Authority with name: "+ name+ " can not be found");
-        }
-        return authorityFound;
 
-    }
+
 
     @Override
     public Authority findById(Long id) {
