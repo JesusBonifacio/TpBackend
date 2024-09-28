@@ -15,6 +15,7 @@ import java.util.List;
 @Table(name="authorities")
 public class Authority {
     @Id
+    //ola
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     //Nuevo
