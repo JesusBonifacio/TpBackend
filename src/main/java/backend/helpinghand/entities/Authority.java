@@ -19,7 +19,7 @@ public class Authority {
     private Long id;
     //Nuevo
     private String name;
-
+    //nuevo
     @JsonIgnore
     @ManyToMany(mappedBy = "authorities")
     private List<User> users;
